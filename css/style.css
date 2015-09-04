@@ -101,6 +101,17 @@ body {
 	box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.3), 0 0 1.2em rgba(255, 255, 255, 0.5);
 }
 
+.rate-list {
+  display:block;
+  list-style-type: square;
+  font-size: 2vw;
+  padding: 10px;
+}
+
+.rate-list td {
+  padding: 10px 20px;
+}
+
 .typing-body {
 	animation: type 2s steps(60, end);
 	width:100%;
@@ -154,15 +165,15 @@ body {
 /* Colors */
 
 .panel1 {
-  background-color: #000;
+  background-color: #222;
 }
 
 .panel2 {
-  background-color: #333;
+  background-color: #222;
 }
 
 .panel3 {
-  background-color: #555;
+  background-color: #222;
 }
 /* FIXED BACKGROUND IMAGES */
 
