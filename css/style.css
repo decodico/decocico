@@ -16,7 +16,7 @@ body {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-	
+
 	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
 	justify-content: center;
@@ -120,7 +120,6 @@ body {
 
 .typing-body pre {
 	color: #00FF61;
-	*width: 100%;
 	white-space: pre-wrap;       /* css-3 */
 	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
 	white-space: -pre-wrap;      /* Opera 4-6 */
@@ -138,15 +137,15 @@ body {
   display: inline-block;
 }
 
-@keyframes type{ 
-  from { width: 0; } 
+@keyframes type{
+  from { width: 0; }
 }
 
 @keyframes type2{
   0%{width: 0;}
   50%{width: 0;}
-  100%{ width: 100; } 
-} 
+  100%{ width: 100; }
+}
 
 @keyframes blink{
   to{opacity: .0;}
@@ -156,13 +155,20 @@ body {
 .fore-panel {
   padding: 100px;
   font-family: 'Share Tech Mono', Arial;
-  *min-height: 100%;
-  *height: 100%;
   z-index: 2;
-  *margin-top: -15px;
+  -webkit-box-shadow: inset 0 -1.5em 3em -3em rgba(255, 255, 255, 0.3), 0 0 1.5em rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: inset 0 -1.5em 3em -3em rgba(255, 255, 255, 0.3), 0 0 1.5em rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0 -1.5em 3em -3em rgba(255, 255, 255, 0.3), 0 0 1.5em rgba(0, 0, 0, 0.7);
 }
 
 /* Colors */
+
+.panelA {
+  background-color: #222;
+  min-height: 30vw;
+  overflow: hidden;
+  position: relative;
+}
 
 .panel1 {
   background-color: #222;
@@ -178,14 +184,26 @@ body {
 /* FIXED BACKGROUND IMAGES */
 
 .fixedBG {
-  *position: relative;
-  *min-height: 100%;
-  height: 400px;
+  height: 200px;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
   z-index: 2;
+}
+
+.bio {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.bio-image img {
+  z-index: 3;
+  position: absolute;
+  top: -25px;
+  right: -6vw;
+  height: 45vw;
+  opacity: 0.1;
 }
 
 .prj-list {
@@ -195,6 +213,7 @@ body {
 .prj-list a {
 	text-decoration: none;
 	color: #fff;
+  margin: 20px;
 }
 
 .prj-list a:hover {
@@ -203,16 +222,11 @@ body {
 
 .prj-list .prj-title{
 	margin: 2vw 5vw;
-	font-size: 1.5vw;
+	font-size: 18px;
 }
 
 .prj-list img {
   width: 15vw;
-  *height: 8vw;
-  *background-size: cover;
-  *-moz-background-size: cover;
-  *background-repeat: no-repeat;
-  *background-position: 50% 50%;
 }
 
 .icn-list {
@@ -233,20 +247,3 @@ body {
 .fixedBG.bg2 {
   background-image: url("../images/random-wallpapers-blue-matrix-background-wallpaper-30591.jpeg");
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
