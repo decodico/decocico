@@ -1,4 +1,5 @@
-AddHandler application/x-httpd-php5 .html .htm
+RemoveHandler .html .htm
+AddType application/x-httpd-php .php .htm .html
 
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
