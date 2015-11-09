@@ -247,3 +247,9 @@ body {
 .fixedBG.bg2 {
   background-image: url("../images/random-wallpapers-blue-matrix-background-wallpaper-30591.jpeg");
 }
+
+.transparent {
+	zoom: 1;
+	filter: alpha(opacity=70);
+	opacity: 0.7;
+}
